@@ -1,20 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratório do Alquimista</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="glow potion-glow-1"></div>
+  <div class="glow potion-glow-2"></div>
+
+  <main class="container">
+    <header>
+      <span class="badge">🧪 Grimório Digital v2.0</span>
+      <h1>Laboratório Alquímico</h1>
+      <p>Combine elementos misteriosos e descubra elixires lendários.</p>
+    </header>
+
+    <section class="card">
+      <h2>Mesa de Mistura</h2>
+      <div class="cauldron-area">
+        <div class="potion-bottle" id="potion-preview">🧪</div>
+        <div class="potion-name" id="potion-title">Selecione os Ingredientes</div>
+        <p id="potion-desc" class="potion-desc">Escolha dois elementos abaixo para preparar um elixir.</p>
+      </div>
+
+      <div class="ingredient-grid">
+        <button class="btn-ingredient" data-element="fire">🔥 Pó de Fênix</button>
+        <button class="btn-ingredient" data-element="water">💧 Lágrima de Sereia</button>
+        <button class="btn-ingredient" data-element="shadow">🌙 Manta de Sombra</button>
+        <button class="btn-ingredient" data-element="gold">✨ Sol Vital</button>
+      </div>
+
+      <button id="brew-btn" class="btn btn-primary" disabled>Forjar Poção</button>
+    </section>
+
+    <section class="card">
+      <h2>Diário do Mago</h2>
+      <ul id="log-list" class="log-list">
+        <li>Aguardando primeira criação...</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

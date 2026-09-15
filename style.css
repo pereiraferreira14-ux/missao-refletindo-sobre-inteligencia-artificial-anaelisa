@@ -143,7 +143,7 @@ header p {
 
 .ingredient-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
@@ -156,6 +156,7 @@ header p {
   border-radius: 10px;
   cursor: pointer;
   font-size: 0.9rem;
+  text-align: left;
   transition: all 0.2s ease;
 }
 

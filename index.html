@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laboratório do Alquimista</title>
+  <title>Teste das Escolas de Magia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,33 +12,29 @@
 
   <main class="container">
     <header>
-      <span class="badge">🧪 Grimório Digital v2.0</span>
-      <h1>Laboratório Alquímico</h1>
-      <p>Combine elementos misteriosos e descubra elixires lendários.</p>
+      <span class="badge">📜 Avaliação da Academia v2.0</span>
+      <h1>Jornada das Arcanias</h1>
+      <p>Tome suas decisões em cada escola e descubra o seu destino final.</p>
     </header>
 
     <section class="card">
-      <h2>Mesa de Mistura</h2>
       <div class="cauldron-area">
-        <div class="potion-bottle" id="potion-preview">🧪</div>
-        <div class="potion-name" id="potion-title">Selecione os Ingredientes</div>
-        <p id="potion-desc" class="potion-desc">Escolha dois elementos abaixo para preparar um elixir.</p>
+        <div class="potion-bottle" id="quiz-icon">🔮</div>
+        <div class="potion-name" id="quiz-title">Pergunta 1 de 3</div>
+        <p id="quiz-desc" class="potion-desc">Carregando teste...</p>
       </div>
 
-      <div class="ingredient-grid">
-        <button class="btn-ingredient" data-element="fire">🔥 Pó de Fênix</button>
-        <button class="btn-ingredient" data-element="water">💧 Lágrima de Sereia</button>
-        <button class="btn-ingredient" data-element="shadow">🌙 Manta de Sombra</button>
-        <button class="btn-ingredient" data-element="gold">✨ Sol Vital</button>
+      <div class="ingredient-grid" id="options-grid">
+        <!-- As opções serão geradas dinamicamente via JS -->
       </div>
 
-      <button id="brew-btn" class="btn btn-primary" disabled>Forjar Poção</button>
+      <button id="brew-btn" class="btn btn-primary" disabled>Próxima Escolha</button>
     </section>
 
     <section class="card">
-      <h2>Diário do Mago</h2>
+      <h2>Diário de Consequências</h2>
       <ul id="log-list" class="log-list">
-        <li>Aguardando primeira criação...</li>
+        <li>Nenhum resultado registrado ainda...</li>
       </ul>
     </section>
   </main>

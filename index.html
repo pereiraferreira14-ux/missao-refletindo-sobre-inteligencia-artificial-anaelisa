@@ -7,10 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="glow potion-glow-1"></div>
   <div class="glow potion-glow-2"></div>
 
-  <main class="container">
+  <!-- Tela Inicial com o Botão Iniciar -->
+  <section id="start-screen" class="container start-container">
+    <header>
+      <span class="badge">📜 Avaliação da Academia v2.0</span>
+      <h1>Jornada das Arcanias</h1>
+      <p>Pronto para descobrir o seu destino final nas escolas de magia?</p>
+    </header>
+    <button id="btnIniciar" class="btn btn-primary">Iniciar Jornada</button>
+  </section>
+
+  <!-- Conteúdo Principal do Teste (Inicia Oculto) -->
+  <main class="container" id="quiz-container" style="display: none;">
     <header>
       <span class="badge">📜 Avaliação da Academia v2.0</span>
       <h1>Jornada das Arcanias</h1>
